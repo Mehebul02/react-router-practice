@@ -10,10 +10,10 @@ const Header=()=>{
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/blog">Blog</a></li> */}
-                    <Link to='/'>Home</Link>
-                    <Link to='/about'>About</Link>
-                    <Link to='/users'>Users</Link>
-                    <Link to='/blog'>Blog</Link>
+                    <NavLink to='/' className={({isActive})=>isActive?'underline text-red-700':'red'}>Home</NavLink>
+                    <NavLink to='/about'className={({isActive})=>isActive?'underline text-red-700':'red'} >About</NavLink>
+                    <NavLink to='/users' className={({isActive})=>isActive?'underline text-red-700':'red'}>Users</NavLink>
+                    <NavLink to='/blog' className={({isActive})=>isActive?'underline text-red-700':'red'}>Blog</NavLink>
                 </ul>
             </nav>
 
